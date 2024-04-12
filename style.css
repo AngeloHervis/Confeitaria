@@ -5,8 +5,72 @@ body {
     background-color: rgb(34, 34, 34);
     color: white;
     font-family: 'Poppins', sans-serif;
-    overflow: hidden;
+    overflow-y: auto; 
 }
+
+
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        text-align: center;
+        line-height: 1;
+    }
+
+    ul {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    li {
+        margin: 10px;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+    form [type="submit"] {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        text-align: center;
+        line-height: 1;
+    }
+
+    ul {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    li {
+        margin: 10px;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+    form [type="submit"] {
+        width: 100%;
+    }
+}
+
 
 header {
     display: flex;
@@ -15,33 +79,33 @@ header {
     align-items: center;
 }
 
-.title{
+.title {
     flex-direction: column;
     line-height: 10px;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
     font-size: 1em;
 }
 
-a:hover{
+a:hover {
     color: rgb(132, 14, 201);
     transition: 0.3s all;
 }
 
 .contato {
-    border:2px solid rgb(132, 14, 201);
+    border: 2px solid rgb(132, 14, 201);
     padding: 10px;
     border-radius: 15px;
 }
 
-.contato:hover{
+.contato:hover {
     background-color: rgb(132, 14, 201);
     color: white;
 }
@@ -51,11 +115,11 @@ li {
     margin: 20px;
 }
 
-h1{
+h1 {
     font-weight: 300;
 }
 
-main{
+main {
     display: flex;
     flex-direction: row;
     margin: 70px;
@@ -70,7 +134,7 @@ span {
     color: rgb(132, 14, 201);
 }
 
-p{
+p {
     line-height: 1em;
     max-width: 400px;
 }
@@ -95,17 +159,23 @@ form [type="submit"] {
     font-weight: bold;
     cursor: pointer;
     border: none;
-} 
+}
 
 form [type="submit"] :hover {
     opacity: -5;
+    color: black;
+    background-color: aqua;
+    transition: 0.3s all;
 }
 
-input{
+input {
     margin-top: 20px;
     height: 20px;
     padding: 15px;
     border-radius: 20px;
     font-size: 15px;
+}
 
+input:focus {
+    outline: none;
 }
